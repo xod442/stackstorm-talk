@@ -1,6 +1,6 @@
 ---
 name: nasa_apod
-pack: tutorial
+pack: tektalk
 description: "Queries NASA's APOD (Astronomy Picture Of the Day) API to get the link to the picture of the day."
 runner_type: "python-script"
 enabled: true
