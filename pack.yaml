@@ -1,12 +1,11 @@
 ---
-ref: tutorial
-name: tutorial
+ref: tektalk
+name: tektalk
 description: Hands-on tutorial for getting started with StackStorm
-keywords: 
+keywords:
     - tutorial
     - stackstorm
     - st2
-    - encore
 version: 0.1.0
-author: Encore Technologies
-email: code@encore.tech
+author: Rick Kauffman
+email: rick@rickkauffman.com
