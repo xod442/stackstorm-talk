@@ -1,6 +1,6 @@
 ---
   name: "publish_timer"
-  pack: "tutorial"
+  pack: "tektalk"
   description: "Rule using an Interval Timer to publish APOD."
   trigger:
     type: "core.st2.IntervalTimer"
