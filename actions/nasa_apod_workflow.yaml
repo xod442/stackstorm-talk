@@ -1,8 +1,8 @@
 ---
 name: nasa_apod_workflow
 pack: tektalk
-description: "Runs a series of actions."
-runner_type: "Orquesta"
+description: A workflow that runs a series of actions
+runner_type: orquesta
+entry_point: workflows/nasa_apod_workflow.yaml
 enabled: true
-entry_point: workflow/nasa_apod_workflow
 
