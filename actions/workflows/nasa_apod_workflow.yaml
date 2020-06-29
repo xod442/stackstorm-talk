@@ -1,0 +1,28 @@
+version: '1.0'
+
+description: A workflow that gets the apod and echos results.
+
+tasks:
+  get_apod_url:
+    action: tektalk.nasa_apod
+    input:
+      date: <%now().format("%Y-%m-%d")%>
+    next:
+      - when: <% succeeded() %>
+        publish:
+          - apod: <% result().stdout %>
+        do: echo_results
+
+  echo results:
+    action: core.echo
+    input:
+      message: "<% ctx().apod %>"
+    next: 
+      - when: <% succeeded() %>
+        do: uname
+
+  uname: 
+    action: core.local
+    input:
+      cmd: "uname -a"
+  
