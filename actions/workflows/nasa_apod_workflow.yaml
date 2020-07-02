@@ -13,7 +13,7 @@ tasks:
           - apod: <% result().stdout %>
         do: echo_results
 
-  echo results:
+  echo_results:
     action: core.echo
     input:
       message: "<% ctx().apod %>"
